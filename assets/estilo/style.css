@@ -162,6 +162,7 @@ footer {
 
 /*Jogo*/
 #jogo {
+  width: 85%;
   margin-top: 350px;
   margin-left: 50%;
   padding: 20px;
