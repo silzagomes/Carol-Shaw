@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Silza" />
+    <meta
+      name="description"
+      content="Site de projeto final do curso de Programação Web para Iniciantes, fornecido pela Womakers Code - Potência Feminina"
+    />
+    <link rel="stylesheet" href="assets/estilo/style.css" />
+    <title>Carol Shaw - A primeira desenvolvedora de jogos</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img
+                class="icone icone--texto"
+                alt="home"
+                src="assets/icones/home.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/silza/"
+              ><img
+                class="icone icone--texto"
+                alt="linkedin"
+                src="assets/icones/linkedin.svg"
+            /></a>
+          </li>
+          <li>
+            <a href="#jogo"
+              ><img
+                class="icone icone--texto"
+                alt="home"
+                src="assets/icones/game.svg"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="perfil">
+        <h1 class="perfil__nome">Carol Shaw</h1>
+        <p class="perfil__descricao">
+          Carol Shaw é uma figura pioneira na indústria de jogos eletrônicos,
+          tendo deixado uma marca duradoura na área como programadora de jogos
+          de computador. Sua contribuição foi significativa e abrange uma série
+          de jogos icônicos, como "3-D Tic-Tac-Toe", "River Raid" e "Super
+          Breakout". Seu trabalho e legado abriram caminho para outras mulheres
+          na indústria e ajudaram a popularizar os jogos eletrônicos. Confira 5
+          fatos sobre a vida dessa pioneira dos games:
+        </p>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img
+            src="assets/imagens/Imagem1.jpg"
+            alt="Carreira em jogos eletrônicos: Carol Shaw começou a trabalhar na indústria de jogos eletrônicos em 1978, na empresa Atari. Ela é uma das primeiras mulheres a trabalhar como programadora de jogos eletrônicos e é conhecida por criar o jogo 3-D Tic-Tac-Toe"
+            style="width: 50%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img
+            src="assets/imagens/Imagem2.jpg"
+            alt="Jogos criados por Carol Shaw: Além de 3-D Tic-Tac-Toe, Carol Shaw também criou outros jogos populares, incluindo River Raid, Video Checkers e Super Breakout. Esses jogos foram lançados na década de 1980 e ainda são considerados clássicos do gênero."
+            style="width: 50%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img
+            src="assets/imagens/Imagem3.jpg"
+            alt="Influência na indústria de jogos eletrônicos: Carol Shaw é uma das programadoras mais influentes da indústria de jogos eletrônicos. Ela abriu caminho para outras mulheres na área e ajudou a tornar os jogos eletrônicos mais acessíveis e populares."
+            style="width: 50%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img
+            src="assets/imagens/Imagem4.jpg"
+            alt="Prêmios e reconhecimentos: Carol Shaw recebeu diversos prêmios e reconhecimentos por suas contribuições para a indústria de jogos eletrônicos. Em 2017, ela foi incluída no Hall da Fama da Academia de Artes e Ciências Interativas, em reconhecimento à sua carreira de sucesso"
+            style="width: 50%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img
+            src="assets/imagens/Imagem5.jpg"
+            alt="Vida pessoal: Pouco se sabe sobre a vida pessoal de Carol Shaw, pois ela é conhecida por ser uma pessoa bastante reservada. Sabe-se que ela nasceu em 1955 e cresceu na Califórnia, onde estudou matemática e ciência da computação na Universidade da Califórnia em Berkeley antes de ingressar na Atari."
+            style="width: 50%"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div clas="dot" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+      <section>
+        teste
+        <div id="jogo">
+          <div class="hide">
+            <div class="hide-content">
+              <p class="result">X é o vencedor</p>
+              <button onclick="restart('num')" class="btn-restart">
+                Reiniciar
+              </button>
+            </div>
+          </div>
+
+          <div class="title-container">
+            <h2 class="title">Tic Tac Toe</h2>
+          </div>
+          <div class="scoreboard-container">
+            <div class="x-score-container">
+              <span
+                class="infor-score"
+                style="
+                  color: #ff13c4;
+                  filter: drop-shadow(0 0 8px #b00000);
+                  text-shadow: 0px 4px #d20000;
+                "
+                >X:
+              </span>
+              <span class="x-score">0</span>
+            </div>
+            <div><span style="font-size: 15pt">VS</span></div>
+            <div class="o-score-container">
+              <span
+                class="infor-score"
+                style="
+                  color: #7b68ee;
+                  filter: drop-shadow(0 0 8px #0d0f8e);
+                  text-shadow: 0px 4px #0d0f8e;
+                "
+                >O:
+              </span>
+              <span class="o-score">0</span>
+            </div>
+          </div>
+          <div class="cell-container">
+            <div class="cell" onclick="clique('cell-1')" id="cell-1"></div>
+            <div class="cell" onclick="clique('cell-2')" id="cell-2"></div>
+            <div class="cell" onclick="clique('cell-3')" id="cell-3"></div>
+            <div class="cell" onclick="clique('cell-4')" id="cell-4"></div>
+            <div class="cell" onclick="clique('cell-5')" id="cell-5"></div>
+            <div class="cell" onclick="clique('cell-6')" id="cell-6"></div>
+            <div class="cell" onclick="clique('cell-7')" id="cell-7"></div>
+            <div class="cell" onclick="clique('cell-8')" id="cell-8"></div>
+            <div class="cell" onclick="clique('cell-9')" id="cell-9"></div>
+          </div>
+          <div class="player-mensage">
+            <p class="player-order">Vez do jogador X</p>
+          </div>
+        </div>
+      </section>
+      <script src="assets/script/script.js"></script>
+    </main>
+    <footer>
+      <span class="footer__texto">
+        Feito por Silza
+        <img
+          class="icone icone--texto"
+          alt="amor"
+          src="assets/icones/heart.svg"
+        />
+      </span>
+    </footer>
+  </body>
+</html>
